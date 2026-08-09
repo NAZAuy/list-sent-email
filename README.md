@@ -39,10 +39,10 @@ The script was tested on:
 
 ## Installation
 
-Copy the script to a directory in the repository and make it executable:
+Copy the script to a directory and make it executable:
 
 ```bash
-chmod 750 ./git/listsentem.sh
+chmod 750 ~/scripts/listsentem.sh
 ```
 
 The script is intentionally kept independent of CWP paths and configuration. It reads the standard Postfix mail log only.
