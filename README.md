@@ -52,31 +52,31 @@ The script is intentionally kept independent of CWP paths and configuration. It 
 Show the last 20 outbound SMTP delivery records:
 
 ```bash
-sudo ./git/listsentem.sh
+sudo ~/scripts/listsentem.sh
 ```
 
 Show the last 50 records:
 
 ```bash
-sudo ./git/listsentem.sh 50
+sudo ~/scripts/listsentem.sh 50
 ```
 
 Show all supported delivery transports, including local deliveries:
 
 ```bash
-sudo ./git/listsentem.sh --all 100
+sudo ~/scripts/listsentem.sh --all 100
 ```
 
 Show help:
 
 ```bash
-./git/listsentem.sh --help
+~/scripts/listsentem.sh --help
 ```
 
 Disable colors:
 
 ```bash
-NO_COLOR=1 sudo ./git/listsentem.sh 50
+NO_COLOR=1 sudo ~/scripts/listsentem.sh 50
 ```
 
 ## Output
@@ -147,10 +147,10 @@ The script does not identify the exact PHP file that generated a message. It is 
 The script was validated on AlmaLinux 9.8 with CWP v1.7 using:
 
 ```bash
-bash -n ./git/listsentem.sh
-sudo ./git/listsentem.sh 5
-sudo ./git/listsentem.sh --all 5
-NO_COLOR=1 sudo ./git/listsentem.sh 5
+bash -n ~/scripts/listsentem.sh
+sudo ~/scripts/listsentem.sh 5
+sudo ~/scripts/listsentem.sh --all 5
+NO_COLOR=1 sudo ~/scripts/listsentem.sh 5
 ```
 
 The validation confirmed that the script:
