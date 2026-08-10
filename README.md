@@ -83,6 +83,33 @@ NO_COLOR=1 sudo ~/scripts/listsentem.sh 50
 
 The default output contains records using the `smtp` transport. These are deliveries from this Postfix instance to another SMTP server.
 
+```bash
+└─> sudo ~/SysAdmin/git/listsentem.sh --all 20
+Last 20 all transports
+Log: /var/log/maillog
+DATE-TIME         QUEUE ID       SENDER                   RECIPIENT                DOMAIN              TECHNICAL SOURCE        RELAY                 STATUS   VIA
+Abr  9 09:37:45   A8FASDFGAFA3   service@intl.paypal.com  naza34@gmail.com         gmail.com            SMTP 66.211.170.90       gmail-smtp-in.l.goog sent     smtp
+Abr  9 09:38:01   310ASDFGAFA3   alert@srvnazsar.com.nz   naza34@gmail.com         gmail.com            local root (UID 0)       gmail-smtp-in.l.goog sent     smtp
+Abr  9 00:44:28   769ASDFGAFA3   alert@srvnazsar.com.nz   naza34@gmail.com         gmail.com            local root (UID 0)       gmail-smtp-in.l.goog sent     smtp
+Abr  9 00:45:27   948ASDFGAFA3   alert@srvnazsar.com.nz   naza34@gmail.com         gmail.com            local root (UID 0)       gmail-smtp-in.l.goog sent     smtp
+Abr  9 01:04:20   8EEASDFGAFA4   RecepcionCFE@bse.com.uy  cruz20vlam@gmail.com     gmail.com            SMTP 179.27.50.236       gmail-smtp-in.l.goog sent     smtp
+Abr  9 02:02:11   6AAASDFGAFA4   Facturacit@scotiab       cruz20vlam@gmail.com     gmail.com            SMTP 66.159.250.235      gmail-smtp-in.l.goog sent     smtp
+Abr  9 02:10:48   077ASDFGAFA4   RecepcionCFE@bse.com.uy  cruz20vlam@gmail.com     gmail.com            SMTP 179.27.50.236       gmail-smtp-in.l.goog sent     smtp
+Abr  9 02:41:08   4F7ASDFGAFA4   alert@srvnazsar.com.nz   naza34@gmail.com         gmail.com            local root (UID 0)       gmail-smtp-in.l.goog sent     smtp
+Abr  9 02:59:48   5F6ASDFGAFA4   asdfsdfa@hotmail.com     laboratorio@ventarolasur ventarolasuracruz.uy SMTP 52.103.7.41       srvnazsar.com.nz[priva sent     lmtp
+Abr  9 03:14:57   A1EASDFGAFA4   asdfsdfa@hotmail.com     laboratorio@ventarolasur ventarolasuracruz.uy SMTP 52.103.10.92      srvnazsar.com.nz[priva sent     lmtp
+Abr  9 03:37:47   83FASDFGAFA4   alert@srvnazsar.com.nz   naza34@gmail.com         gmail.com            local root (UID 0)       gmail-smtp-in.l.goog sent     smtp
+Abr  9 03:44:18   52CASDFGAFA4   alert@srvnazsar.com.nz   naza34@gmail.com         gmail.com            local root (UID 0)       gmail-smtp-in.l.goog sent     smtp
+Abr  9 03:55:54   921ASDFGAFA4   alert@srvnazsar.com.nz   naza34@gmail.com         gmail.com            local root (UID 0)       gmail-smtp-in.l.goog sent     smtp
+Abr 10 00:03:35   333ASDFGAFA4   efactura.asdfassadfaad   cruz20vlam@gmail.com     gmail.com            SMTP 209.85.214.182      gmail-smtp-in.l.goog sent     smtp
+Abr 10 00:03:36   CDFASDFGAFA4   efactura.asdfassadfaad   cruz20vlam@gmail.com     gmail.com            SMTP 209.85.210.171      gmail-smtp-in.l.goog sent     smtp
+Abr 10 00:03:37   4C2ASDFGAFA4   efactura.asdfassadfaad   cruz20vlam@gmail.com     gmail.com            SMTP 209.85.216.49       gmail-smtp-in.l.goog sent     smtp
+Abr 10 00:15:01   487ASDFGAFA4   alert@srvnazsar.com.nz   naza34@gmail.com         gmail.com            local root (UID 0)       gmail-smtp-in.l.goog sent     smtp
+Abr 10 00:20:20   61AASDFGAFA4   todog@srvnazsar.com.nz   gestion@gastoal.uy       gastoal.uy           local gastoal (UID 100 srvnazsar.com.nz[priva sent     lmtp
+Abr 10 00:20:20   7FAASDFGAFA5   todog@srvnazsar.com.nz   admin@goal.com.nz        goal.com.nz          local gastoal (UID 100 srvnazsar.com.nz[priva sent     lmtp
+Abr 10 02:00:04   138ASDFGAFA4   ro@srvnazsar.com.nz      ro@srvnazsar.com.nz    srvnazsar.com.nz       local root (UID 0)       local                sent     local
+```
+
 Important fields:
 
 - `DATE-TIME`: Timestamp written by Postfix.
