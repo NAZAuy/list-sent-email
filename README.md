@@ -33,7 +33,7 @@ The script does not block mail, change Postfix, modify firewall rules, or take a
 The script was tested on:
 
 - AlmaLinux 9.8.
-- CentOS Web Panel (CWP) v1.7.
+- CentOS Web Panel (CWP) v1.8.
 - Postfix with `/var/log/maillog`.
 - A server using Dovecot for local mailbox delivery.
 
