@@ -171,7 +171,7 @@ The script does not identify the exact PHP file that generated a message. It is 
 
 ## Validation
 
-The script was validated on AlmaLinux 9.8 with CWP v1.7 using:
+The script was validated on AlmaLinux 9.8 with CWP v1.8 using:
 
 ```bash
 bash -n ~/scripts/listsentem.sh
